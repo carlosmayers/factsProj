@@ -14,87 +14,32 @@
 
 </head>
 
-<body>
+    <body>
 
 <!-- first page-->
 <div data-role="page" id="firstPage"> 
     <div data-role="header">
         <h1>Beat It</h1>
+        <h1>The Perfect Makeup Selector For You</h2>
     </div>
+
+
 
     <div data-role="main">
         <div style="text-align : center;">
             <img id="picHolder"
-                 src="/resources/logo.png"></img>
-            <!--<a href="#LogInPage" data-role="button">Log In</a> -->
-           <!-- <a href="#SignInPage" data-role="button">Sign Up</a> -->
+              src="/resources/logo.png"></img> 
+            <p><b><i> Select A Category Below: </i></b></p> 
+            <button id="askButton">Face Shape</button>
+            <button id="askButton">Eye Shape</button>
+            <button id="askButton">Brow Shape</button>
+            <button id="askButton">Eye Color</button>
+            <button id="askButton">Skin Type</button>
+            <button id="askButton">Skin Tone</button>
+            <button id="askButton">Lips</button>
 
         </div>
-        <!-- /content -->
 
-
-    </div>
-</div>
-
-<!-- second page-->
-
-<!--
-<div data-role="page" id="LogInPage">
-    <div data-role="header">
-        <h1>Login Here </h1>
-    </div>
-    <div data-role="main">
-        <button id="LogIn">Log In</button>
-
-        <label for="username">Username: </label>
-        <input id="username" type="text">
-
-        <label for="password">Password: </label>
-        <input id="password" type="password">
-    </div>
-</div>
-
-
-<Signup page-->
-
-<!--
-<div data-role="page" id="SignInPage">
-    <div data-role="header">
-        <h1>Sign Up Here </h1>
-    </div>
-    <div data-role="main">
-        <button id="SignUp">Sign Up</button>
-
-        <label for="fullName">Enter Full Name:</label>
-        <input type="text" name="name" id="basic" value="" data-mini="true"/>
-
-        <label for="fullEmail">Enter Email:</label>
-        <input type="text" name="name" id="basic" value="" data-mini="true"/>
-
-        <label for="usernameSign">Enter Username:</label>
-        <input type="text" name="name" id="usernameSign" value="" data-mini="true"/>
-
-        <label for="passwordSign">Enter Password:</label>
-        <input type="password" name="name" id="passwordSign" value="" data-mini="true"/>
-
-        <label for="ConfirmPassword">Confirm Password:</label>
-        <input type="password" name="name" id="basic" value="" data-mini="true"/>
-    </div>
-</div>
-
-
-< third page-->
-
-
-<div data-role="page" id="Choicespage">
-    <div data-role="main">
-        <a href="#FourthPage" data-role="button">Face Shape</a>
-        <a href="#FifthPage" data-role="button">Eye Shape</a>
-        <a href="#SixthPage" data-role="button">Brow Shape</a>
-        <a href="#SeventhPage" data-role="button">Eye Color</a>
-        <a href="#EigthPage" data-role="button">Skin Type</a>
-        <a href="#NinthPage" data-role="button">Skin Tone</a>
-        <a href="#TenthPage" data-role="button">Lips</a>
     </div>
 </div>
 
@@ -130,12 +75,11 @@
         <h1>Eye Shapes </h1>
     </div>
 
-    <button class="EyeShapesButton">EyeRound <img src="http://www.beautyhows.com/wp-content/uploads/2013/05/Round-Eyes-What-Are-Eye-Makeup-Eyeliner-Eyeshadow-and-Mascara-for-Large-or-Small-Round-Eyes-.jpg" width="auto" height="120"> <br/></button>
-    <button class="EyeShapesButton">Almond <img src="https://s-media-cache-ak0.pinimg.com/736x/7c/b3/cc/7cb3ccec514a74e32aeee845e0658243--almond-eye-makeup-natural-eye-makeup.jpg" width="auto" height="120"> <br/></button>
-    <button class="EyeShapesButton">Droopy <img src="https://s-media-cache-ak0.pinimg.com/originals/0e/a8/74/0ea874023c9b00b41e8e38ddd18d558e.jpg" width="auto" height="120"> <br/></button>
-    <button class="EyeShapesButton">Hooded <img src="https://livingonlipstick.files.wordpress.com/2012/11/hooded-eye.jpg" width="auto" height="120"> <br/></button>
-    <button class="EyeShapesButton">Monolid <img src="http://www.makeupandbeautyblog.com/wp-content/uploads/2012/05/Photo-02-bare-eye.jpg" width="auto" height="120"> <br/></button>
-
+    <button class="EyeShapesButton">EyeRound <img id="picHolder" src="/resources/roundeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Almond <img id="picHolder" src="/resources/almondeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Droopy <img id="picHolder" src="/resources/droopyeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Hooded <img id="picHolder" src="/resources/hoodedeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Monolid <img id="picHolder" src="/resources/monolideyes.jpg"></img></button>
 </div>
 
 <!---->
@@ -145,7 +89,7 @@
         <h1>Brow Shapes </h1>
     </div>
 
-    <button class="BrowShapesButton">Rounded <img src="eyebrows/thinround.png"> <br/></button>
+    <button class="BrowShapesButton">Rounded <img id="picHolder" src="/resources/monolideyes.jpg"></img></button>
     <button class="BrowShapesButton">Hard Angled <img src="eyebrows/thinarch.png"> <br/></button>
     <button class="BrowShapesButton">Soft Angled <img src="eyebrows/thinstraight.png"> <br/></button>
     <button class="BrowShapesButton">S-Shaped <img src="eyebrows/naturalround.png"> <br/></button>
@@ -159,10 +103,10 @@
         <h1>Eye Color </h1>
     </div>
 
-    <button class="EyeColorButton">Brown <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/MyStrangeIris.JPG/311px-MyStrangeIris.JPG" width="auto" height="120"> <br/></button>
-    <button class="EyeColorButton">Blue <img src="http://i1.allaboutvision.com/i/conditions-2016/eye-color-blue-z-c-660x440.jpg" width="auto" height="120"> <br/></button>
-    <button class="EyeColorButton">Green <img src="https://media1.popsugar-assets.com/files/thumbor/q04VOWKB5lBBHUzEXmeK9x0oUFQ/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/11/15/715/n/1922153/3676a6a7582b3367d030a5.19154974_edit_img_cover_file_42711263_1479223864/i/Green-Eye-Makeup-Ideas-From-Instagram.jpg" width="auto" height="120"> <br/></button>
-    <button class="EyeColorButton">Hazel <img src="https://qph.ec.quoracdn.net/main-qimg-e4572f83aed9ee0af4a015670791b796-c" width="auto" height="120"> <br/></button>
+    <button class="EyeColorButton">Brown <img id="picHolder" src="/resources/browneyes.jpg"></img></button>
+    <button class="EyeColorButton">Blue <img id="picHolder" src="/resources/blueeyes.jpg"></img></button>
+    <button class="EyeColorButton">Green <img id="picHolder" src="/resources/greeneyes.jpg"></img><br></button>
+    <button class="EyeColorButton">Hazel<img id="picHolder" src="/resources/hazeleyes.jpg"></img><br/></button>
 
 </div>
 
