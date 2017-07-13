@@ -51,4 +51,11 @@ class LipsHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
+    ('/faceshape', FaceShape),
+    ('/eyeshape', EyeShape),
+    ('/browshape', BrowShape),
+    ('/eyecolor', EyeColor),
+    ('/skintype', SkinType),
+    ('/skintone', SkinTone),
+    ('/lips', LipsHandler)
 ], debug=True)
