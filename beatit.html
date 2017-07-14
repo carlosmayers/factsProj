@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <title>Beat It!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+
+
+</head>
+
+    <body>
+
+<!-- first page-->
+<div data-role="page" id="firstPage"> 
+    <div data-role="header">
+        <h1>Beat It</h1>
+        <h1>The Perfect Makeup Selector For You</h2>
+    </div>
+
+
+
+    <div data-role="main">
+        <div style="text-align : center;">
+            <img id="picHolder"
+              src="/resources/logo.png"></img> 
+            <p><b><i> Select A Category Below: </i></b></p> 
+            <a href="face_shape.html"> <button id="askButton">Face Shape</button> </a>
+            <a href="eye_shape.html"> <button id="askButton">Eye Shape</button> </a>
+            <a href="brow_shape.html"> <button id="askButton">Brow Shape</button> </a>
+            <a href="eye_color.html"> <button id="askButton">Eye Color</button> </a>
+            <a href="skin_type.html"> <button id="askButton">Skin Type</button> </a>
+            <a href="skin_tone.html"> <button id="askButton">Skin Tone</button></a>
+            <a href="lips.html"> <button id="askButton">Lips</button></a>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- fourth page-->
+<div data-role="page" id="FourthPage">
+    <div data-role="header">
+        <h1>Face Shape </h1>
+    </div>
+    <div data-role="main">
+        <button class="FaceShapesButton">Oval <img src="https://joyceawele55.files.wordpress.com/2013/09/download-1.jpg"
+                                                   width="auto" height="120"> <br/></button>
+        <button class="FaceShapesButton">Long <img src="http://www.tashibrowandskinstudio.com/images/fc-lng.jpg"
+                                                   width="auto" height="120"> <br/></button>
+        <button class="FaceShapesButton">Round <img
+                src="http://iloverelationship.com/wp-content/uploads/2013/07/Best-Hairstyle-For-Round-Face-Shape.jpg"
+                width="auto" height="120"> <br/></button>
+        <button class="FaceShapesButton">Square <img src="https://joyceawele55.files.wordpress.com/2013/09/fc-squr.jpg"
+                                                     width="auto" height="120"> <br/></button>
+        <button class="FaceShapesButton">Heart <img src="http://www.tashibrowandskinstudio.com/images/fc-hrt.jpg"
+                                                    width="auto" height="120"> <br/></button>
+        <button class="FaceShapesButton">Diamond <img
+                src="https://joyceawele55.files.wordpress.com/2013/09/download-1.jpg" width="auto" height="120"> <br/>
+        </button>
+
+    </div>
+</div>
+
+
+<!-- fifth page-->
+<div data-role="page" id="FifthPage">
+    <div data-role="header">
+        <h1>Eye Shapes </h1>
+    </div>
+
+    <button class="EyeShapesButton">EyeRound <img id="picHolder" src="/resources/roundeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Almond <img id="picHolder" src="/resources/almondeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Droopy <img id="picHolder" src="/resources/droopyeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Hooded <img id="picHolder" src="/resources/hoodedeyes.jpg"></img></button>
+    <button class="EyeShapesButton">Monolid <img id="picHolder" src="/resources/monolideyes.jpg"></img></button>
+</div>
+
+<!---->
+<!-- sixth page-->
+<div data-role="page" id="SixthPage">
+    <div data-role="header">
+        <h1>Brow Shapes </h1>
+    </div>
+
+    <button class="BrowShapesButton">Rounded <img id="picHolder" src="/resources/monolideyes.jpg"></img></button>
+    <button class="BrowShapesButton">Hard Angled <img src="eyebrows/thinarch.png"> <br/></button>
+    <button class="BrowShapesButton">Soft Angled <img src="eyebrows/thinstraight.png"> <br/></button>
+    <button class="BrowShapesButton">S-Shaped <img src="eyebrows/naturalround.png"> <br/></button>
+    <button class="BrowShapesButton">Flat <img src="eyebrows/naturalround.png"> <br/></button>
+</div>
+
+
+<!-- seventh page-->
+<div data-role="page" id="SeventhPage">
+    <div data-role="header">
+        <h1>Eye Color </h1>
+    </div>
+
+    <button class="EyeColorButton">Brown <img id="picHolder" src="/resources/browneyes.jpg"></img></button>
+    <button class="EyeColorButton">Blue <img id="picHolder" src="/resources/blueeyes.jpg"></img></button>
+    <button class="EyeColorButton">Green <img id="picHolder" src="/resources/greeneyes.jpg"></img><br></button>
+    <button class="EyeColorButton">Hazel<img id="picHolder" src="/resources/hazeleyes.jpg"></img><br/></button>
+
+</div>
+
+<!--eigth page-->
+<div data-role="page" id="EigthPage">
+    <div data-role="header">
+        <h1>Skin Type</h1>
+    </div>
+
+    <button class="SkinTypeButton">Oily Skin</button>
+    <button class="SkinTypeButton">Dry Skin</button>
+    <button class="SkinTypeButton">Combination Skin</button>
+    <button class="SkinTypeButton">Normal Skin</button>
+</div>
+
+
+<!--ninth page-->
+<div data-role="page" id="NinthPage">
+    <div data-role="header">
+        <h1>Skin Tone</h1>
+    </div>
+
+    <button class="SkinToneButton">Light</button>
+    <button class="SkinToneButton">Fair</button>
+    <button class="SkinToneButton">Medium</button>
+    <button class="SkinToneButton">Olive</button>
+    <button class="SkinToneButton">Chocolate Brown</button>
+    <button class="SkinToneButton">Deep Brown</button>
+</div>
+
+<!-- tenth page-->
+<div data-role="page" id="TenthPage">
+    <div data-role="header">
+        <h1>Lips </h1>
+    </div>
+
+    <button class="LipToneButton">SummerLips</button>
+    <button class="SkinToneButton">Fall Lips</button>
+    <button class="SkinToneButton">Winter Lips</button>
+    <button class="SkinToneButton">Spring Lips</button>
+</div>
+
+
+<!-- eighth page-->
+<div data-role="page" id="FaceShapeRecommendations">
+    <div data-role="header">
+        <h1>Recommendations </h1>
+    </div>
+    <div>
+        <center><img id="logoCC"
+                     src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg"
+                     alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+        <p id="FaceParagraph"></p>
+        <center><img id="FaceImage" src="" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+    </div>
+</div>
+
+<!-- ninth page-->
+<div data-role="page" id="Oval">
+    
+		<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+        <p> <center>Highlight center of forehead and chin to bring these areas forward, this also bring out your best features. </center>
+			
+				<center>Highlight your temples, blending it downward underneath your eyes.</center> 
+		<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				<center>Create soft angled eyebrows and emphasize your lips or eyes. </center> </p>
+		<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+			
+		<center><img id="logoCC" src="https://lh3.googleusercontent.com/-Wbqxyrs03vE/Vb9u24A4QTI/AAAAAAAAAW0/sFOUq_RNjwM/w346-h429/ovsl.jpg" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+    </div>
+
+<!-- tenth page-->
+<div data-role="page" id="Round">
+    
+		<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+        <p> <center>Apply blush underneath your cheeckbones.</center>
+				
+			<center>Brown tones highlight the best and make any eye color pop.</center>
+			<center>Berry lip tones make the lips pop.</center>
+		<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				<center>Depending on the skin tone. contouring with bronzer draws attention to the length rather than width of the face.</center>
+				
+				<center>A high arch eyebrow shape makes the face elongate and draws attention to the eyes.</center>
+				
+				<center>Dark eyeshadows(browns, deep blues, some blacks) draw attention.</center>
+			
+		<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+		<center><img id="logoCC" src="https://lh3.googleusercontent.com/-PJieUdOL5vk/Vb98xn5GcSI/AAAAAAAAAZI/otDefvZDoHU/w346-h386/round.jpg" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+		</div>
+
+<!-- eleventh page-->
+<div data-role="page" id="Long">
+    
+		<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+			
+				<center>When applying mascara, focus on the center of the eye arch.</center>
+			 
+				<center>Highlight the center of the face(top ridges of cheeckbones) and add blush to the apples of your cheeks.</center>
+		
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center>TIP: make a fish-like face to find the structure of your cheekbones!</center>
+			
+				<center>Creating a flat eyebrow shape creates the illusion of "stopping" the viewer from seeing the elonged face.</center>
+			 
+				<center>and instead creates the illusion of a shorter face.</center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-DdxxDlrlhvY/Vb95aY86lJI/AAAAAAAAAXo/04YEeJWi-zY/w346-h447/lomng.jpg" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+		</div>
+
+<!-- twelfth page-->
+<div data-role="page" id="Square">
+				<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Contour with matte colors and no shimmer to enhance those God-given angles and edges!</center>
+				
+				<center>Blend bronzer around the hairline with a deeper shade to bring attention to the eyes.</center>
+				
+				<center>Stick to pink, peach blush colors on the apples of your cheeks if you have a lighter complexion.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Stick to a fresh, plum berry if your skin tone is deeper.</center>
+				
+				<center>Concentrate the intensity of lip color at the center of the lips, blending lightly outwards.</center>
+				
+				<center>Start with a curved eyebrow shape, then add more of an angle to create a balance.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-J8GfLhy_5I8/Vb97Pfg56xI/AAAAAAAAAYU/w2rOHMZ6oFY/w346-h424/sww.jpg" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+			</div>
+			</div>
+		</div>
+		
+
+<!-- thirteenth page-->
+<div data-role="page" id="Diamond">
+<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Use warm blush colors ro define your cheekbones like peach and apricot.</center>
+				
+				<center>Silvery eyeshadow can draw out your shape and eyes.</center>
+				
+				<center>Highlight under your cheecks and along the jawline in order to make the face appear even.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Pale lipstick can draw attention to the lips and away from the forehead.</center>
+			
+				<center>Curved eyebrow shapes will soften the angled face and reduce the widest part of the face.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-Yypu-HIpBeM/Vb9-MJySktI/AAAAAAAAAZ8/0VzrWsXm7gA/w346-h463/tri.jpg" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+			</div>
+			</div>
+		</div>
+
+<!-- fourteenth page-->
+<div data-role="page" id="Heart">
+<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Keep your natural brow shape! Don't try to arch or extend your brow. Waxing to a natural curve should be all it takes</center>
+				
+				<center>Widen your chin to even out your face using a bit of concealer.</center>
+				
+				<center>Avoid using a lot of blush, a mere vertical sweep will do just fine.</center> 
+				
+				<center>Contour to bring out your best feautures.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Use darker eyeliners like dark browns and deep blacks to draw attention.</center>
+				
+				<center>Lip linear can be a great way to enhance them and make them your face's focal point.</center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-O7vURJOhN5k/Vb9_9Hm0rZI/AAAAAAAAAas/9t2Kxpq7OUM/w141-h172/hear.jpg" alt="Cosmo Chic" style="width:150px;height:200px;"/></center>
+			</div>
+			</div>
+		</div>
+		
+
+<!-- fifthteenth page-->
+<div data-role="page" id="Almond">
+<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Apply the lightest eyeshadow shade on your entire eyelid. Blend the midtone shadow on your eyecrease and apply your darkest shade on the outer half of your eyelids.
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Apply eyeliner from the inner to the outer corners. Simply flicking a small winged angle will enhance your eyes. The wing could be short, long, thick, subtle or dramatic. 
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-9ogzM_Jcovk/Vb-LVNw0rTI/AAAAAAAAAfQ/CueHoMqywzM/w346-h192/aw.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			</div>
+			</div>
+		</div>
+
+<!-- fifthteenth page-->
+<div data-role="page" id="EyeRound">
+<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Apply lighter eyeshadow from your lash linen to the brow bone. Apply the darker shade on your eye crease, creating a "V" shape.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Apply eyeliner starting a quarter way from your inner corner.</center>
+				
+				<center>Try to stick as close to the lash line as possible. Don't be afraid of creating a cat eye or winged eyeliner.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-Z_4pSdadhB8/Vb-KuNKJ1mI/AAAAAAAAAec/BijwQBWzbq8/w346-h192/round%2B.jpg\" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			</div>
+			</div>
+		</div>
+		
+
+<!-- sixteenth page-->
+<div data-role="page" id="Droopy">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Try not to apply mascara to your bottom lashes. Curl the upper lashes and focus on those instead.</center> 
+				
+				<center>Try to keep eyeliner to the upperlid only.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Avoid shimmery shadows, since they will create the image of droopier eyes.</center>
+				
+				<center>Stick to a few basic shadows that will even out your lids.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-4MvMtihZk2c/Vb-LrFg4GrI/AAAAAAAAAf0/DxxkKhPOEPY/w346-h192/aq.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			</div>
+			</div>
+		</div>
+		
+
+<!-- seventeenth page-->
+<div data-role="page" id="Hooded">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Avoid applying dark shadows over the lid as this will create a "tired" look.</center>
+				
+				<center>Avoid highlighting the brow bone too much, as this will shorten the eyelid space.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>If you line the bottom lash line, don't forget to line the top as well.</center> 
+				
+				<center>You can though, line the top lash without lining the bottom.</center>
+				<p id="faceParagraph"> </p>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-3sEv4MkL9e0/Vb-JXSdEinI/AAAAAAAAAdw/Rkm31ikVwgI/w346-h192/uhdfsij.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			</div>
+			</div>
+		</div>
+
+<!-- eighteenth page-->
+<div data-role="page" id="Asian">
+<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Skip the wing when applying eyeliner, instead, create one by blending dark shadows upwards and at an angle.</center> 
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>An ombree effect for eye shadows creates a seemingly open eye look.</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-ySLc8Z4lMBU/Vb-M2gl3kcI/AAAAAAAAAg8/O_zkzpO3Olk/w346-h192/ghjkl.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			</div>
+			</div>
+		</div>
+
+<!-- ninthteenth page-->
+<div data-role="page" id="Rounded">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+		
+				<center>Rounded eyebrows work best for heart shaped faces to balance a prominent</center> 
+		
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+		
+				<center>chin and diamond faces to narrow the face.</center> 
+		
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-hfYtUkhqJQk/Vb-tTX7NAMI/AAAAAAAAAig/aiW3J5Q_W3s/w198-h43-no/round.png" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+		
+			</div>
+			</div>
+		</div>
+
+<!-- twentieth page-->
+<div data-role="page" id="HardAngled">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Hard-angled eyebrows are a great solution for round faces because it makes the face appear longer.</center> 
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>It's up and down lines would draw the viewer's eye up and down</center> 
+				
+				<center>and lengthens it. Avoid rounded brows if you have a rounded face as</center>  
+				
+				<center>it makes the face appear more round.</center> 
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh5.googleusercontent.com/-XG3ZjE-1nPc/Vb-tQ0-kNHI/AAAAAAAAAiY/K5QDbVJ0bHY/w198-h47-no/hard.png" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			
+			</div>
+			</div>
+		</div>
+		
+
+<!-- twenty first page-->
+<div data-role="page" id="SoftAngled">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Soft-angled eyebrows work best to maintain the ideal oval face.</center>  
+				
+				<center>This is also a great eyebrow shape for square faces as it balances a square jaw.</center>  
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Diamond shaped faces will</center>  
+				
+				<center>also look best with soft-angled eyebrows to narrow the face.</center>  
+				
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh5.googleusercontent.com/-QKU3yTFLgBU/Vb-tXURcnOI/AAAAAAAAAis/a3g5vhqVGYs/w198-h56-no/soft.png" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+		
+			</div>
+			</div>
+		</div>
+
+<!-- twenty second page-->
+<div data-role="page" id="S-Shaped">
+       <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+			
+				<center>S-shaped or curved eyebrows would look best on diamond shaped faces because the curvesn </center>  
+				
+				<center>Will soften the angled face and "reduce" the widest part of the face temples.</center>   
+				
+				<center>This eyebrow shape also balances the square jaw of a square face.</center>  
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Also, depending on how prominent the forehead of a heart-shaped face is</center> 
+				
+				<center>start first with a low arch, round curved brows then add more</center>  
+				
+				<center>volume to it as it "adds" more length to the forehead as well as balancing the pointy chin.</center>  
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh4.googleusercontent.com/-_5Cr4N4XkeE/Vb-tXY1ZO8I/AAAAAAAAAiw/ANWm4zk1GFg/w180-h47-no/shapsed.png" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			
+			</div>
+			</div>
+		</div>
+	
+
+<!-- twenty third page-->
+<div data-role="page" id="Flat">
+<center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>Flat eyebrows is the best option for long faces because its line</center>  
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>would "stop" the viewer from seeing the elonged face, instead makes it appear to be shorter.</center>  
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-DM_FEuLuOtc/Vb-tdQEN-6I/AAAAAAAAAi4/vCpGy1F_FZU/w189-h54-no/flat.png" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+		
+			</div>
+			</div>
+		</div>
+	
+		<div data-role="page" id="Results">  <!-->AKA Profile<!-->
+		</div>
+		<div data-role="page" id="Tutorial">
+	</div>
+	</body>
+</html>
+
+<!-- twenty fourth page-->
+<div data-role="page" id="Green">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>BEIGE</center>
+					
+				<center>TAN</center>
+					
+				<center>CHARCOAL</center>
+					
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>PLUM</center>
+					
+				<center>GOLD</center>
+					
+				<center>CHOCOLATE BROWN</center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-ySLc8Z4lMBU/Vb-M2gl3kcI/AAAAAAAAAg8/O_zkzpO3Olk/w346-h192/ghjkl.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			</div>
+			</div>
+		</div>
+		
+		
+
+<!-- twenty fifth page-->
+<div data-role="page" id="Hazel">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+		
+				<center>BROWN</center>
+				
+				<center>BRONZE</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+		
+				<center>CERULEAN</center>
+				
+				<center>CARNELIAR</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-ySLc8Z4lMBU/Vb-M2gl3kcI/AAAAAAAAAg8/O_zkzpO3Olk/w346-h192/ghjkl.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+		
+			</div>
+			</div>
+		</div>
+
+<!-- twenty sixth page-->
+<div data-role="page" id="Brown">
+   <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+		
+				<center>VIBRANT BLUES</center>
+				
+				<center>PURPLE</center>
+				
+				<center>SILVER</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+		
+				<center>BROWN</center>
+				
+				<center>GREEN</center>
+		
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-ySLc8Z4lMBU/Vb-M2gl3kcI/AAAAAAAAAg8/O_zkzpO3Olk/w346-h192/ghjkl.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+		
+			</div>
+			</div>
+		</div>
+
+<!-- twenty seventh page-->
+<div data-role="page" id="Blue">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+				
+				<center>COPPER</center>
+				
+				<center>PEACH</center>
+				
+				<center>CORAL</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>BRONZE</center>
+				
+				<center>RUST</center>
+				
+				<center>PURPLE</center>
+		
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="http://www.steve-simpson.com/uploads/files/bigstock_Blue_Eye_2910508.jpg" alt="Cosmo Chic" style="width:300px;height:70px;"/></center>
+			
+			</div>
+			</div>
+		</div>
+		
+
+<!-- twenty eighth page-->
+<div data-role="page" id="Lips">
+    <center><img id="logoCC" src="https://lh5.googleusercontent.com/-RYiqpA7LtYk/VbvAv0H9E1I/AAAAAAAAAVI/8YIq-6FzcAE/w1044-h165-no/recc.jpg" alt="Cosmo Chic" style="width:600px;height:95px;"/></center>
+			
+				<center>Summmer</center>
+				
+				<center>Sangria Red</center>
+				<center>Electric Fuchsia</center>
+				<center>Carnation Pink</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Winter</center>
+				
+				<center>Bruised Plum</center>
+				<center>Pink Blush</center>
+				<center>English Rose</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Fall</center>
+				
+				<center>Berry</center>
+				<center>Nude</center>
+				<center>Burgundy</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+				
+				<center>Spring</center>
+				
+				<center>Peachy Melon</center>
+				<center>Bubblegum Pink</center>
+				<center>Hot Coral</center>
+				
+				<center><img id="logoCC" src="https://lh3.googleusercontent.com/-W2vLMbh6Crw/VbvH_IZbB3I/AAAAAAAAAWA/MSRvpHyYJKg/w346-h192/yy.jpg" alt="Cosmo Chic" style="width:500px;height:30px;"/></center>
+			
+				<center><img id="logoCC" src="http://static.tumblr.com/96eb46baeccee497cbb3d2bb06e9751e/igu8pgq/FcDmfqbf2/tumblr_static_lips.gif" alt="Cosmo Chic" style="width:300px;height:200px;"/></center>
+		
+			</div>
+			</div>
+		</div>
+
+<!-- twenty seventh page-->
+<div data-role="page" id="blue">
+    <div data-role="header">
+        <h1>Recommendations </h1>
+    </div>
+</div>
+
+<!-- twenty ninth page-->
+<div data-role="page" id="green">
+    <div data-role="header">
+        <h1>Recommendations </h1>
+    </div>
+</div>
+
+<!-- thirtieth page-->
+<div data-role="page" id="hazel">
+    <div data-role="header">
+        <h1>Recommendations </h1>
+    </div>
+</div>
+
+<script>
+    Parse.initialize("sYj16c5GDjwWQXxGV3O9IUl9E5dVu8cCfEbJolS7", "huwbWVUPbUdQqo28S2rEkQbZt4gzHFG5tsGHklqE");
+
+    $("#LogIn").on("click", function (e) {
+
+        var usernameTxtBox = $("#username");
+        var passwordTxtBox = $("#password");
+
+        Parse.User.logIn(usernameTxtBox.val(), passwordTxtBox.val(), {
+            success: function (user) {
+                $.mobile.changePage("#Choicespage");
+                alert("User " + user.getUsername() + " is logged in!");
+            },
+            error: function (user, error) {
+                // The login failed. Check error to see why.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    });
+    //Code for signing up a user
+    $("#SignUp").on("click", function (e) {
+        console.log("signing up user");
+
+        var usernameTxtBox = $("#usernameSign");
+        var passwordTxtBox = $("#passwordSign");
+
+        var user = new Parse.User();
+        user.set("username", usernameTxtBox.val());
+        user.set("password", passwordTxtBox.val());
+
+        user.signUp(null, {
+            success: function (user) {
+                $.mobile.changePage("#Choicespage");
+                alert("User " + user.getUsername() + " is created and logged in!");
+            },
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    });
+
+
+    //Code for updating a user's info
+    $("#updateAccntButton").on("click", function (e) {
+        console.log("updating user");
+
+        var usernameTxtBox = $("#username");
+        var passwordTxtBox = $("#password");
+
+        var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("username", usernameTxtBox.val());
+        user.set("password", passwordTxtBox.val());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+                // Hooray!
+                alert("User " + user.getUsername() + " has been updated!");
+            },
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+    });
+
+    $(".FaceShapesButton").on("click", function (e) {
+        console.log("updating user");
+
+
+        var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("FaceShape", $(this).text());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+
+                //Go to the face shape recommendations page
+                
+
+                var userFaceShape = user.get("FaceShape").trim();
+
+                //Change the paragraph text and image src to fit the user's face shape
+                if (userFaceShape == "Oval") {
+					$.mobile.changePage("#Oval");
+                    
+                }
+               
+				 else if (userFaceShape == "Round"){
+						$.mobile.changePage("#Round");
+                }
+				 else if (userFaceShape == "Long"){
+						$.mobile.changePage("#Long");
+                }
+				else if (userFaceShape == "Square"){
+						$.mobile.changePage("#Square");
+                }
+				else if (userFaceShape == "Heart"){
+						$.mobile.changePage("#Heart");
+                }
+				else if (userFaceShape == "Diamond"){
+						$.mobile.changePage("#Diamond");
+                }
+
+
+            },
+			
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+    });
+
+     $(".EyeShapesButton").on("click", function (e) {
+        console.log("updating user");
+
+
+        var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("EyeShape", $(this).text());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+
+                //Go to the face shape recommendations page
+                
+
+               //Go to the face shape recommendations page
+                
+
+                var userEyeShape = user.get("EyeShape").trim();
+
+                //Change the paragraph text and image src to fit the user's face shape
+                if (userEyeShape == "Almond") {
+					$.mobile.changePage("#Almond");
+                    
+                }
+               
+				 else if (userEyeShape == "EyeRound"){
+						$.mobile.changePage("#EyeRound");
+                }
+				 else if (userEyeShape == "Droopy"){
+						$.mobile.changePage("#Droopy");
+                }
+				else if (userEyeShape == "Hooded"){
+						$.mobile.changePage("#Hooded");
+                }
+				else if (userEyeShape == "Asian"){
+						$.mobile.changePage("#Asian");
+                }
+				
+
+            },
+			
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+    });
+
+    $(".BrowShapesButton").on("click", function (e) {
+        console.log("updating user");
+
+
+       var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("BrowShape", $(this).text());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+
+                //Go to the face shape recommendations page
+                
+
+                var userBrowShape = user.get("BrowShape").trim();
+
+                //Change the paragraph text and image src to fit the user's face shape
+                if (userBrowShape == "Rounded") {
+					$.mobile.changePage("#Rounded");
+                    
+                }
+               
+				 else if (userBrowShape == "HardAngled"){
+						$.mobile.changePage("#HardAngled");
+                }
+				 else if (userBrowShape == "SoftAngled"){
+						$.mobile.changePage("#SoftAngled");
+                }
+				else if (userBrowShape == "S-Shaped"){
+						$.mobile.changePage("#Square");
+                }
+				else if (userBrowShape == "Heart"){
+						$.mobile.changePage("#Heart");
+                }
+				else if (userBrowShape == "Flat"){
+						$.mobile.changePage("#Flat");
+                }
+
+
+            },
+			
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+    });
+
+    $(".EyeColorButton").on("click", function (e) {
+        console.log("updating user");
+
+
+        var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("EyeColor", $(this).text());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+
+                //Go to the face shape recommendations page
+                
+
+                var userFaceShape = user.get("EyeColor").trim();
+
+                //Change the paragraph text and image src to fit the user's face shape
+                if (userEyeColor == "Green") {
+					$.mobile.changePage("#Green");
+                    
+                }
+               
+				 else if (userEyeColor == "Hazel"){
+						$.mobile.changePage("#Hazel");
+                }
+				 else if (userFaceShape == "Brown"){
+						$.mobile.changePage("#Brown");
+                }
+				else if (userFaceShape == "Blue"){
+						$.mobile.changePage("#Blue");
+                }
+
+
+            },
+			
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+    });
+
+    $(".SkinToneButton").on("click", function (e) {
+        console.log("updating user");
+
+
+        var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("SkinTone", $(this).text());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+                $.mobile.changePage("#Choicespage");
+                alert("User " + user.getUsername() + " has been updated!");
+            },
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+    });
+
+    $(".LipToneButtonButton").on("click", function (e) {
+        console.log("updating user");
+
+
+        var user = Parse.User.current();//since the user is already created, just get the current user
+        user.set("Lips", $(this).text());
+
+        //Notice we use the "save()" function, NOT the "signup()" function
+        user.save(null, {
+            success: function (user) {
+
+                //Go to the face shape recommendations page
+                
+
+                var userFaceShape = user.get("LipTone").trim();
+
+                //Change the paragraph text and image src to fit the user's face shape
+                if (userFaceShape == "Lips") {
+					$.mobile.changePage("#Lips");
+                    
+                }
+               
+
+
+            },
+			
+            error: function (user, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+    });
+
+
+
+    //Code for displaying a user's info
+    $("#displayInfoButton").on("click", function (e) {
+        console.log("displaying user's info");
+
+        var user = Parse.User.current();//since the user is already created and logged in, just get the current user
+        var outputText = "username: " + user.get("username") + "/ password: " + user.get("password");
+        $("#output").text(outputText);
+        console.log("username: " + user.get("username"));
+        console.log("password: " + user.get("password"));
+    });
+
+    //Code for logging out a user
+    $("#logoutButton").on("click", function (e) {
+        console.log("logging out user");
+
+        Parse.User.logOut();
+
+    });
+
+</script>
+</body>
