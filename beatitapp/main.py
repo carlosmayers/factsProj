@@ -55,6 +55,5 @@ app = webapp2.WSGIApplication([
     ('/browshape', BrowShape),
     ('/eyecolor', EyeColor),
     ('/skintype', SkinType),
-    ('/skintone', SkinTone),
     ('/lips', LipsHandler)
 ], debug=True)
