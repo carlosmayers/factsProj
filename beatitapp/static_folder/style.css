@@ -1,0 +1,24 @@
+body{
+	background-color: #ffeff7;
+
+}
+
+img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.mainlogo{
+	background-color: gray;
+
+}
+
+#header {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+
+}
